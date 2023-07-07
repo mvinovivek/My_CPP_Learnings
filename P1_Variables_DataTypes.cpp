@@ -43,4 +43,11 @@ int main()
     std::cout << anotherNumber << "\n";
     std::cout << balance << "\n";
     std::cout << numberSteps << "\t" << pi << '\t' << grade << '\t' << isPass << '\n';
+
+    // One of the useful type is constant
+    const int truth{43};
+    // By declaring a variable as constant we are telling the compiler that this value will not change.
+    // When someone tries to change the value of the const, the compiler will throw an error.
+
+    truth = 50; // This line is error prone and will not compile!
 }
